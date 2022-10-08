@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bebas Neue', cursive;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #170014;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 600;
+    height: 43px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.links li{
+    margin: 20px 20px;
+    align-items: center;
+}
+
+.parent-links{
+    position: relative;
+    cursor: pointer;
+}
+
+.sub-links{
+    display: none;
+    position: fixed;
+    background-color: #170014;
+    height: 100vh;
+    right: 0;
+    z-index: 1;
+    width: 200px;
+}
+
+.parent-links:hover .sub-links{
+    display: block;
+}
+.bg{
+    position: relative;
+    width:1517px;
+    height:2400px;
+}
+.content{
+    position: relative;
+    background-color: #170014;
+}
+.titlecon{
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    font-family: 'Bebas Neue', cursive;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 50px;
+}
+.sageimg{
+    position: absolute;
+    top: 10%;
+    left: 23%;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    object-position: -6px 7px;
+    border: 5px solid #ffffff;
+    background-color: #170014;
+}
+.sagerole{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 11%;
+    left: 24%;
+}
+.sagename{
+    position: absolute;
+    top: 10%;
+    left: 35.2%;
+    font-family: 'Bebas Neue', cursive;
+    color: #ffffff;
+}
+.sagetext{
+    position: absolute;
+    top: 20%;
+    left: 21%;
+    font-family: 'Mate SC', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+.omenimg{
+    position: absolute;
+    top: 45.5%;
+    left: 23%;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    object-position: -6px 7px;
+    border: 5px solid #ffffff;
+    background-color: #170014;
+}
+.omenrole{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 46%;
+    left: 24%;
+}
+.omenname{
+    position: absolute;
+    top: 45.5%;
+    left: 34.7%;
+    font-family: 'Bebas Neue', cursive;
+    color: #ffffff;
+}
+.omentext{
+    position: absolute;
+    top: 55.7%;
+    left: 21%;
+    font-family: 'Mate SC', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+.sovaimg{
+    position: absolute;
+    top: 77.5%;
+    left: 23%;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    object-position: -6px 7px;
+    border: 5px solid #ffffff;
+    background-color: #170014;
+}
+.sovarole{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 78%;
+    left: 24%;
+}
+.sovaname{
+    position: absolute;
+    top: 77.4%;
+    left: 35%;
+    font-family: 'Bebas Neue', cursive;
+    color: #ffffff;
+}
+.sovatext{
+    position: absolute;
+    top: 87.4%;
+    left: 18%;
+    font-family: 'Mate SC', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+.jettimg{
+    position: absolute;
+    top: 28%;
+    right: 25%;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    object-position: 7px 7px;
+    border: 5px solid #ffffff;
+    background-color: #170014;
+}
+.jettrole{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 29%;
+    right: 26%;
+}
+.jettname{
+    position: absolute;
+    top: 28%;
+    right: 37.4%;
+    font-family: 'Bebas Neue', cursive;
+    color: #ffffff;
+}
+.jetttext{
+    position: absolute;
+    top: 38%;
+    right: 21%;
+    font-family: 'Mate SC', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+.yoruimg{
+    position: absolute;
+    top: 62%;
+    right: 25%;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    object-position: 2px 7px;
+    border: 5px solid #ffffff;
+    background-color: #170014;
+}
+.yorurole{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 63%;
+    right: 26%;
+}
+.yoruname{
+    position: absolute;
+    top: 62%;
+    right: 37%;
+    font-family: 'Bebas Neue', cursive;
+    color: #ffffff;
+}
+.yorutext{
+    position: absolute;
+    top: 72%;
+    right: 24%;
+    font-family: 'Mate SC', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.cont{
+    padding: auto;
+}
+.footer{
+    position: absolute;
+    bottom: 0%;
+    padding: 20px 20px;
+    height:40px;
+    background-color: #170014;
+}
+.sosmed{
+    display: flex;
+}
+.fb{
+    cursor: pointer;
+    margin-left: 21px;
+    margin-right: 20px;
+}
+.yt{
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.ig{
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 1270px;
+}

@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+    *{
+    margin: 0;
+    padding: 0;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #170014;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+    
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        padding: 20px 20px;
+        font-size: 2rem;
+        font-family: 'Bebas Neue', cursive;
+        font-weight: 600;
+        height: 43px;
+        margin-bottom: 20px;
+        white-space: nowrap;
+    }
+    
+    .links li{
+        margin: 20px 20px;
+        align-items: center;
+    }
+    
+    .parent-links{
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .sub-links{
+        display: none;
+        position: fixed;
+        background-color: #170014;
+        height: 100vh;
+        right: 0;
+        z-index: 1;
+        width: 200px;
+    }
+    
+    .parent-links:hover .sub-links{
+        display: block;
+    }
+    .background{
+    background-color: #170014;
+    }
+    .content3{
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        font-family: 'Bebas Neue', cursive;
+        color: #400110;
+    }
+    .allmaps{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ascent{
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-family: 'Bebas Neue', cursive;
+        color: #400110;
+        font-size: 30px;
+    }
+    .ascentph{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-family: 'Bebas Neue', cursive;
+        color: #400110;
+        font-size: 30px;
+    }
+    .textascent{
+        position: absolute;
+        top: 72%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-family: 'Mate SC', serif;
+        color: #400110;
+        text-align: center;
+    }
+    .split{
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-family: 'Bebas Neue', cursive;
+        color: #400110;
+        font-size: 30px;
+    }
+    .splitph{
+        position: absolute;
+        top: 102%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-family: 'Bebas Neue', cursive;
+        color: #400110;
+        font-size: 30px;
+    }
+    .textsplit{
+        position: absolute;
+        top: 123%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-family: 'Mate SC', serif;
+        color: #400110;
+        text-align: center;
+    }
+    .haven{
+        position: absolute;
+        top: 135%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-family: 'Bebas Neue', cursive;
+        color: #400110;
+        font-size: 30px;
+    }
+    .havenph{
+        position: absolute;
+        top: 153%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-family: 'Bebas Neue', cursive;
+        color: #400110;
+        font-size: 30px;
+    }
+    .texthaven{
+        position: absolute;
+        top: 172%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-family: 'Mate SC', serif;
+        color: #400110;
+        text-align: center;
+    }
+    .bind{
+        position: absolute;
+        top: 183%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-family: 'Bebas Neue', cursive;
+        color: #400110;
+        font-size: 30px;
+    }
+    .bindph{
+        position: absolute;
+        top: 201%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-family: 'Bebas Neue', cursive;
+        color: #400110;
+        font-size: 30px;
+    }
+    .textbind{
+        position: absolute;
+        top: 220%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-family: 'Mate SC', serif;
+        color: #400110  ;
+        text-align: center;
+    }
+    .footer{
+        padding: 20px 20px;
+        height:40px;
+        background-color: #170014;
+    }
+    .sosmed{
+        display: flex;
+    }
+    .fb{
+        cursor: pointer;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .yt{
+        cursor: pointer;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .ig{
+        cursor: pointer;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    @media only screen and (max-width: 1000px) {
+        .content3{
+            top: 19%;
+        }
+        .ascent{
+            top: 29%;
+        }
+        .ascentph{
+            top: 46%;
+        }
+        .textascent{
+            top: 68%;
+            font-size: 14px;
+        }
+        .split{
+            top: 81%;
+        }
+        .splitph{
+            top: 98%;
+        }
+        .textsplit{
+            top: 121%;
+            font-size: 14px;
+        }
+        .haven{
+            top: 140%;
+        }
+        .havenph{
+            top: 157%;
+        }
+        .texthaven{
+            top: 180%;
+            font-size: 14px;
+        }
+        .bind{
+            top: 194%;
+        }
+        .bindph{
+            top: 211%;
+        }
+        .textbind{
+            top: 233%;
+            font-size: 14px;
+        }
+        
+    }

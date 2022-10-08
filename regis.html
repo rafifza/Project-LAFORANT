@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registry</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./Asset/Logo/logo tab.png">
+    <link rel="stylesheet" href="./CSS/regis.css">
+    <script src="./JS/script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li>
+                <a href="./home.html">
+                    <img src="./Asset/Logo/LaForant Logo.png" width="60px">
+                </a>
+            </li>
+        </ul>
+        <ul class="links">
+            <li class="parent-links">
+                <img src="./Asset/Logo/menu.png" height="40px" alt="">
+                <ul class="sub-links">
+                    <li><a href="./map.html">Maps</a></li>
+                    <li><a href="./agent.html">Agents</a></li>
+                    <li><a href="./spec.html">Specification</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+ <div class="wrapper">
+     <img class="bg" src="./Asset/Background/regisbg.png" width="1536px" height="666px">
+    <div class="registration-form">
+         <div class="title">Registration</div>
+        <form id="form">
+            <div class="form_wrap">
+                <div class="input_grp">
+                    <div class="input_wrap">
+                        <div class="font-atas">
+                         <label for="name">Name</label>
+                        </div>
+                        <input type="name" id="name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="input_wrap">
+                        <div class="font-atas">
+                        <label for="email">E-mail <Address></Address></label>
+                        </div>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+                    
+                    <div class="input_wrap">
+                        <div class="font-atas">
+                        <label for="password">Password</label>
+                        </div>
+                        <input type="password" id="password" placeholder="Enter your password">
+                    </div>
+
+                    <div class="input_wrap">
+                        <div class="font-atas">
+                        <label for="date">Date of birth</label>
+                        </div>
+                        <input type="date" id="date">
+                    </div>
+
+                    <div class="input_wrap">
+                        <div class="font-atas">
+                        <label for="nationality">Nationality</label>
+                        </div>
+                        <select name="nationality" id="nationality">
+                            <option value="">-- select one --</option>
+                            <option value="English">English</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="American">American</option>
+                            <option value="China">China</option>
+                        </select>
+                    </div>
+
+                    <div class="input_wrap">
+                        <div class="wrong">
+                        <label for="" id="error"></label>
+                        </div>
+                    </div>
+
+                    <div class="input_wrap">
+                        <br>
+                        <div class="padding_radio">
+                        <input type="radio" name="agreement" id="agreement" value="agreement">
+                        <label for="agreement">I agree to terms & conditions.</label>
+                        </div>
+                        <br>
+                        <input type="submit" value=" Register ">
+                    </div>
+                </div>
+        </form>
+    </div>
+ </div>
+</body>
+</html>

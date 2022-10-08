@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #170014;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 600;
+    height: 43px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.links li{
+    margin: 20px 20px;
+    align-items: center;
+}
+
+.parent-links{
+    position: relative;
+    cursor: pointer;
+}
+
+.sub-links{
+    display: none;
+    position: fixed;
+    background-color: #170014;
+    height: 100vh;
+    right: 0;
+    z-index: 1;
+    width: 200px;
+}
+
+.parent-links:hover .sub-links{
+    display: block;
+}
+.wrapper{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registration-form{
+    position: absolute;
+    background: crimson;
+    padding: 25px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.registration-form .title{
+    text-align: center;
+    font: 100px;
+    text-transform: uppercase;
+    color: azure;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+.title{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+}
+
+.input_grp{
+    text-align: center;
+    padding: 10px;
+}
+
+.input_wrap{
+    color:black;
+    font-size: large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.padding_radio{
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.button-submit{
+    font-size: 10px;
+    padding: 10px 24px;
+}
+
+.font-atas{
+    padding: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant:unset;
+}
+
+input[type = submit]{
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+.wrong{
+    margin-top: 20px;
+}
+
+#error{
+    color: white;
+}
+@media only screen and (max-width: 1000px) {
+    .wrapper{
+        width: 782px;
+        height: 640px;
+    }
+    .registration-form{
+        top: 50%;
+        left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    }
+}
+@media only screen and (max-width: 800px) {
+    .wrapper{
+        width: 0px;
+        height: 600px;
+    }
+    .registration-form{
+        top: 50%;
+        left: 270px;
+    }
+}
